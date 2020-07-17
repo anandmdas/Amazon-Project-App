@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression_Care_CH">
+<test name= "AmazonTest">
+<classes>
+<class name="amazonAutomation.Test.SampleTest" />
+</classes>
+</test>
+</suite>

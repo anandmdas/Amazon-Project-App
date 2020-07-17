@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Regression_Care_CH]">
+  <test thread-count="5" verbose="0" name="AmazonTest(failed)">
+    <classes>
+      <class name="amazonAutomation.Test.SampleTest">
+        <methods>
+          <include name="amazonAppProductAddition"/>
+          <include name="testready"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- amazonAutomation.Test.SampleTest -->
+    </classes>
+  </test> <!-- AmazonTest(failed) -->
+</suite> <!-- Failed suite [Regression_Care_CH] -->

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="eBayAutomation.eBayAutomation.SampleTest" time="0.009" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="Eclipse OpenJ9"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin\compressedrefs\jclSC180\vm.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\lib\se-service.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\lib\rt.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\lib\resources.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\lib\jsse.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\lib\charsets.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\lib\jce.jar"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="user.name" value="anand.mohandas"/>
+    <property name="java.compiler" value="j9jit29"/>
+    <property name="os.encoding" value="UTF8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="com.ibm.util.extralibs.properties" value=""/>
+    <property name="com.ibm.jcl.checkClassPath" value=""/>
+    <property name="user.language" value="en"/>
+    <property name="com.ibm.oti.vm.bootstrap.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin\compressedrefs;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin\compressedrefs;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin"/>
+    <property name="classworlds.conf" value="D:\POC\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4040162154286648497.tmp"/>
+    <property name="jdk.extensions.version" value="8.0.202.1"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="com.ibm.system.agent.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="com.ibm.zero.version" value="2"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\lib\endorsed"/>
+    <property name="com.ibm.oti.vm.library.version" value="29"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="user.country" value="US"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre"/>
+    <property name="java.vm.info" value="JRE 1.8.0 Windows 10 amd64-64-Bit Compressed References 20190205_265 (JIT enabled, AOT enabled)
+OpenJ9   - 90dd8cb40
+OMR      - d2f4534b
+JCL      - d002501a90 based on jdk8u202-b08"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.awt.fonts" value=""/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="openj9-0.12.1"/>
+    <property name="user.variant" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="jdk.extensions.name" value="Extensions for OpenJDK for Eclipse OpenJ9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="ibm.signalhandling.sigint" value="true"/>
+    <property name="user.home" value="C:\Users\anand.mohandas"/>
+    <property name="com.ibm.cpu.endian" value="little"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="ibm.signalhandling.sigchain" value="true"/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin\compressedrefs;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/AdoptOpenJDK/jre-8.0.202.08/bin/j9vm;C:/Program Files/AdoptOpenJDK/jre-8.0.202.08/bin;C:/Program Files/AdoptOpenJDK/jre-8.0.202.08/lib/amd64;C:\Program Files\AdoptOpenJDK\jre-8.0.202.08\bin;C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;D:\ApacheMaven_3.5.2\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\anand.mohandas\AppData\Local\Microsoft\WindowsApps;C:\Users\anand.mohandas\AppData\Roaming\Dashlane\6.1933.0.22573\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\anand.mohandas\AppData\Roaming\Dashlane\6.1933.0.22573\ucrt;C:\Users\anand.mohandas\AppData\Roaming\Dashlane\6.1933.0.22573\bin\Qt;C:\Users\anand.mohandas\AppData\Roaming\Dashlane\6.1933.0.22573\ucrt;C:\Users\anand.mohandas\AppData\Roaming\Dashlane\6.1933.0.22573\bin\Ssl;C:\Users\anand.mohandas\AppData\Roaming\npm;C:\Users\anand.mohandas\AppData\Local\Android\Sdk\platform-tools;;D:\eclipse-jee-oxygen-R-win32-x86_64\eclipse;;."/>
+    <property name="java.vendor.url" value="http://www.eclipse.org/openj9"/>
+    <property name="java.vm.vendor" value="Eclipse OpenJ9"/>
+    <property name="java.fullversion" value="1.8.0_202-b08
+JRE 1.8.0 Windows 10 amd64-64-Bit Compressed References 20190205_265 (JIT enabled, AOT enabled)
+OpenJ9   - 90dd8cb40
+OMR      - d2f4534b
+JCL      - d002501a90 based on jdk8u202-b08"/>
+    <property name="maven.home" value="D:\POC\eBayAutomation\EMBEDDED"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.class.path" value="/D:/eclipse-jee-oxygen-R-win32-x86_64/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.8.0.20170516-2042/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.io.tmpdir" value="C:\Users\anand.mohandas\AppData\Local\Temp\"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\POC\eBayAutomation"/>
+    <property name="ibm.system.encoding" value="Cp1252"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="ibm.signalhandling.rs" value="false"/>
+    <property name="java.ext.dirs" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre\lib\ext"/>
+    <property name="user.dir" value="D:\POC\eBayAutomation"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.name" value="Eclipse OpenJ9 VM"/>
+    <property name="com.ibm.oti.shared.enabled" value="false"/>
+    <property name="com.ibm.vm.bitmode" value="64"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="com.ibm.oti.configuration" value="scar"/>
+    <property name="java.specification.version" value="1.8"/>
+  </properties>
+  <testcase classname="eBayAutomation.eBayAutomation.SampleTest" name="sampleTestHello" time="0.009"/>
+</testsuite>
