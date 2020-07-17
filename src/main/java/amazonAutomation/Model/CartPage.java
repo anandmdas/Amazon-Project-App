@@ -34,11 +34,9 @@ public class CartPage extends WrapperTest{
 		WebDriverWait wait=new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(prop.getProperty("productName"))));
 		
-		Thread.sleep(3000);
 		String uiProdName=getText("xpath", prop.getProperty("productName"), report);
 		System.out.println("uiProdName"+uiProdName);
 		StringTokenizer st=new StringTokenizer(uiProdName, "...");
-		//uiProdName=uiProdName.replaceAll("...", "");
 		
 		System.out.println("prodName"+prodName);
 		System.out.println("uiProdName"+uiProdName);

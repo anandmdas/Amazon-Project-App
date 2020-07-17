@@ -37,7 +37,6 @@ public class ProductsPage extends WrapperTest {
 		WebDriverWait wait=new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(property.getProperty("productName"))));
 		
-		//Thread.sleep(3000);
 		String productName=getText("xpath", property.getProperty("productName"),report);
 		swipeToElement(property.getProperty("addToCartBtn"));
 		

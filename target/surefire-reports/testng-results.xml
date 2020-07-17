@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression_Care_CH" duration-ms="89346" started-at="2020-07-17T12:59:44 CEST" finished-at="2020-07-17T13:01:14 CEST">
+  <suite name="Regression_Care_CH" duration-ms="137585" started-at="2020-07-17T14:32:38 CEST" finished-at="2020-07-17T14:34:55 CEST">
     <groups>
     </groups>
-    <test name="AmazonTest" duration-ms="89346" started-at="2020-07-17T12:59:44 CEST" finished-at="2020-07-17T13:01:14 CEST">
+    <test name="AmazonTest" duration-ms="137585" started-at="2020-07-17T14:32:38 CEST" finished-at="2020-07-17T14:34:55 CEST">
       <class name="amazonAutomation.Test.SampleTest">
-        <test-method status="PASS" signature="testready()[pri:0, instance:amazonAutomation.Test.SampleTest@25403f34]" name="testready" is-config="true" duration-ms="30067" started-at="2020-07-17T12:59:44 CEST" finished-at="2020-07-17T13:00:14 CEST">
+        <test-method status="PASS" signature="testready()[pri:0, instance:amazonAutomation.Test.SampleTest@44c4d433]" name="testready" is-config="true" duration-ms="56891" started-at="2020-07-17T14:32:38 CEST" finished-at="2020-07-17T14:33:35 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testready -->
-        <test-method status="PASS" signature="amazonAppProductAddition()[pri:0, instance:amazonAutomation.Test.SampleTest@25403f34]" name="amazonAppProductAddition" duration-ms="57526" started-at="2020-07-17T13:00:14 CEST" finished-at="2020-07-17T13:01:12 CEST">
+        <test-method status="PASS" signature="amazonAppProductAddition()[pri:0, instance:amazonAutomation.Test.SampleTest@44c4d433]" name="amazonAppProductAddition" duration-ms="70663" started-at="2020-07-17T14:33:35 CEST" finished-at="2020-07-17T14:34:45 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonAppProductAddition -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:amazonAutomation.Test.SampleTest@25403f34]" name="afterMethod" is-config="true" duration-ms="1675" started-at="2020-07-17T13:01:12 CEST" finished-at="2020-07-17T13:01:14 CEST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:amazonAutomation.Test.SampleTest@44c4d433]" name="afterMethod" is-config="true" duration-ms="9797" started-at="2020-07-17T14:34:46 CEST" finished-at="2020-07-17T14:34:55 CEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=amazonAppProductAddition status=SUCCESS method=SampleTest.amazonAppProductAddition()[pri:0, instance:amazonAutomation.Test.SampleTest@25403f34] output={null}]]]>
+                <![CDATA[[TestResult name=amazonAppProductAddition status=SUCCESS method=SampleTest.amazonAppProductAddition()[pri:0, instance:amazonAutomation.Test.SampleTest@44c4d433] output={null}]]]>
               </value>
             </param>
           </params>

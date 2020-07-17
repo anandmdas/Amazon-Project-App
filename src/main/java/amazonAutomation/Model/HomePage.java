@@ -2,6 +2,7 @@ package amazonAutomation.Model;
 
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -43,7 +44,8 @@ public class HomePage extends WrapperTest {
 		
 		inputValue("id", prop.getProperty("searchBox"), report, readExcel.getValue("SearchText"));
 		
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
 		selectRandomValue("xpath", "//*[@resource-id='com.amazon.mShop.android.shopping:id/iss_search_dropdown_item_suggestions']", report);
 	
 	}
