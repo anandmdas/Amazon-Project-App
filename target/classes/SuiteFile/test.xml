@@ -2,7 +2,7 @@
 <suite name="Regression_Care_CH">
 <test name= "AmazonTest">
 <classes>
-<class name="amazonAutomation.Test.SampleTest" />
+<class name="test.SampleTest" />
 </classes>
 </test>
 </suite>

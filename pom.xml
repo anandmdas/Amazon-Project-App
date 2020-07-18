@@ -3,6 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   
   <build>
+  <testSourceDirectory>{$builddir}/src/main/java/test</testSourceDirectory>
+  
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

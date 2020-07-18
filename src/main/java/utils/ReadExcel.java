@@ -4,13 +4,15 @@ import java.io.FileInputStream;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Properties;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.Assert;
 
-public class ReadExcel {
+public class ReadExcel extends Utility {
 
 	HashMap<String, String> excelValue;
 	Workbook wb;
@@ -20,18 +22,27 @@ public class ReadExcel {
 	 * Description: Reusable function to Open an excel file
 	 * Created By: Anand Mohandas 
 	 */
-	
-	public void openExcel() throws IOException {
-		String testData = System.getProperty("user.dir");
-		fs = new FileInputStream(testData + "//src//main//Resources//TestData//DataSheet.xlsx");
-		wb = new XSSFWorkbook(fs);
+
+	public void openExcel()  {
+		try
+		{
+			String testData = System.getProperty("user.dir");
+			Properties prop=new Properties();
+			prop=loadPropertyFile(System.getProperty("user.dir")+"\\src\\main\\resources\\PropertyFiles\\config.properties");
+			fs = new FileInputStream(testData + prop.getProperty("TestdataPath"));
+			wb = new XSSFWorkbook(fs);
+		}catch (Exception e) {
+			e.printStackTrace();
+			Assert.assertTrue(false, e.getMessage());
+		}
 	}
 
 	/*
 	 * Description: Reusable function to read the testdata for a testcase
 	 * Created By: Anand Mohandas 
+	 * Attribute: testCaseName - Name of the test case which needs to be read from excel file
 	 */
-	public void excelRead(String testCaseName) throws IOException {
+	public void excelRead(String testCaseName) {
 		openExcel();
 		String sheetName = "generic";
 		String testSheet = "";
@@ -73,6 +84,7 @@ public class ReadExcel {
 	/*
 	 * Description: Reusable function to fetch the specific testdata
 	 * Created By: Anand Mohandas 
+	 * Attribute: key - column name in the testcase so the corresponding cell value is returned
 	 */
 	public String getValue(String key) {
 		return excelValue.get(key);

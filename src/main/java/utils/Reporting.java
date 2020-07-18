@@ -15,24 +15,24 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 
-public class Reporting extends WrapperTest {
+public class Reporting extends Utility {
 
 	public ExtentHtmlReporter extentHtmlReport;
 	public ExtentReports report;
 	public ExtentTest logger;
-	
-	
+
+
 	/*
 	 * Description: Reusable function to Capture Screenshot
 	 * Created By: Anand Mohandas 
 	 */
-	
+
 	public String captureScreen()
 	{
 
 		File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String screenShotDestination=null; 
-		
+
 		FileInputStream fileInputStreamReader = null;
 		try {
 			fileInputStreamReader = new FileInputStream(sourceFile);
@@ -48,24 +48,25 @@ public class Reporting extends WrapperTest {
 
 		return screenShotDestination;
 	}
-	
+
 	/*
 	 * Description: Reusable function to Initialize reporting
 	 * Created By: Anand Mohandas 
 	 */
-	
+
 	public void extentReportInit()
 	{
 		extentHtmlReport=new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/Reports/TestResult.html"));
 		report=new ExtentReports();
 		report.attachReporter(extentHtmlReport);
 	}
-	
+
 	/*
 	 * Description: Reusable function to Add passed step in report
 	 * Created By: Anand Mohandas 
+	 * Attribute; desc- Description to be printed in the report
 	 */
-	
+
 	public void extentReportPass(String desc) 
 	{
 		String tempSS= new Reporting().captureScreen();
@@ -76,12 +77,13 @@ public class Reporting extends WrapperTest {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/*
 	 * Description: Reusable function to Add Failed step in report
 	 * Created By: Anand Mohandas 
+	 * Attribute; desc- Description to be printed in the report
 	 */
-	
+
 	public void extentReportFail(String desc) 
 	{
 		String tempSS= new Reporting().captureScreen();
