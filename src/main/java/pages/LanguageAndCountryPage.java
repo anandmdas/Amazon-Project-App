@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Reporting;
 import utils.Utility;
 
-public class LanguageAndCountrySelect extends Utility {
+public class LanguageAndCountryPage extends Utility {
 
 	//Element Decleration
 	String amazonLogo = "com.amazon.mShop.android.shopping:id/action_bar_home_logo";

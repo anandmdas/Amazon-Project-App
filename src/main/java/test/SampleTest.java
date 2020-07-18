@@ -13,7 +13,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 
 import pages.CartPage;
 import pages.HomePage;
-import pages.LanguageAndCountrySelect;
+import pages.LanguageAndCountryPage;
 import pages.ProductsPage;
 import utils.ReadExcel;
 import utils.Reporting;
@@ -54,6 +54,11 @@ public class SampleTest extends Utility{
 
 	}
 
+	/*
+	 * Description: Test method for executing the Amazon App
+	 * Created By: Anand Mohandas 
+	 */
+	
 	@Test
 	public void amazonAppProductAddition()
 	{ 
@@ -61,7 +66,7 @@ public class SampleTest extends Utility{
 
 
 		readExcel.excelRead("AmazonTest");
-		new LanguageAndCountrySelect().loginPage(extentReport);
+		new LanguageAndCountryPage().loginPage(extentReport);
 		new HomePage().searchProduct(extentReport, readExcel);
 		new HomePage().selectSearchProduct(extentReport);
 		String prodName=new ProductsPage().getProductDetails(extentReport);
